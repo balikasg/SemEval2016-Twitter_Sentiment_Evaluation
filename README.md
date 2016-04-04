@@ -3,7 +3,7 @@ The code used for my SemEval 2016 submission.
 
 # Contents
 The repository 
-describes my participation as team ``TwiSE'' in the SemEval 2016 challenge.
+describes my participation as team "TwiSE" in the SemEval 2016 challenge.
 Specifically, we participated in Task 4, namely ``Sentiment Analysis in Twitter'' for which I implemented
 sentiment classification systems for subtasks A, B, C and D.
 
