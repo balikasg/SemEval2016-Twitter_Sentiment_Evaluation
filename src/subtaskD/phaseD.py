@@ -58,7 +58,7 @@ x_test, y_test = createDataMatrix(ngram_features_test, character_gram_features_t
 
 print "SVMs crammer singer"
 for c in np.logspace(-3,4,8): #used 100 for submission
-    clf = OneVsRestClassifier(svm.LinearSVC(C=c, loss='squared_hinge', penalty='l2', class_weight='balanced', multi_class='crammer_singer', max_iter=4000, dual=True, tol=1e-6), n_jobs=4)
+    clf = svm.LinearSVC(C=c, loss='squared_hinge', penalty='l2', class_weight='balanced', multi_class='crammer_singer', max_iter=4000, dual=True, tol=1e-6)
     clf.fit(x_train, y_train)
     print "Hold-out",  showMyKLD(y_test, clf.predict(x_test), yo), c
 
